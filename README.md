@@ -1,11 +1,11 @@
 ## Minimal dark rEFInd theme
 
-This theme is heavily based on [rEFInd-minimal] but improved for darker environments.
+This theme is based on [rEFInd-minimal] but improved for darker environments.
 
 [rEFInd](http://www.rodsbooks.com/refind/) is an easy to use boot manager for UEFI
 based systems. This is a clean and minimal theme for it.
 
-![rEFInd Minimalistic](https://imgur.com/SUEl7As)
+![rEFInd-minimal-dark-screenshot](https://user-images.githubusercontent.com/30976147/87032792-08ee7580-c1dd-11ea-9877-74c48c489726.png)
 
 ### Usage
 
@@ -35,9 +35,9 @@ menuentry "Windows" {
 	loader /EFI/Microsoft/Boot/bootmgfw.efi
 }
 
-menuentry "OSX" {
+menuentry "Ubuntu" {
 	icon /EFI/refind/themes/rEFInd-minimal-dark/icons/os_ubuntu.png
-	options "rw root=UUID=dfb2919d-ff78-48db-a8a7-23f7542c343a loglevel=3"
+	options "rw root=UUID=c1ffd0ad-60bc-45cb-8e2c-00d863b96d39 logLevel=3"
 }
 ```
 
@@ -47,24 +47,18 @@ Entries that are autodetected should also show the proper icons.
 
 If you find the background looks blurry it may be due to the included wallpaper
 being an incorrect resolution for your monitor. You can download the [original
-high quality wallpaper][wallpaper], resize it as appropriate, and replace the
+wallpaper][wallpaper], resize it as appropriate, and replace the
 `background.png`.
 
 You can of course also choose your own background!
 
 ### Attribution
 
-The OS icons are from [Lightness for burg][icons] by [SWOriginal][icon-author].
-
-The background is [Minimalist Wallpaper][wallpaper] by
-[LeonardoAIanB][wallpaper-author]. Thank you to [Padster][padster] for locating
-it!
+The recolored OS icons are from [Lightness for burg][icons] by [SWOriginal][icon-author].
 
 [rEFInd-minimal]: https://github.com/EvanPurkhiser/rEFInd-minimal
 
+[wallpaper]: https://github.com/folws/rEFInd-minimal-dark/raw/master/background.png
+
 [icons]: http://sworiginal.deviantart.com/art/Lightness-for-burg-181461810
 [icon-author]: http://sworiginal.deviantart.com/
-
-[padster]: https://github.com/theRealPadster
-[wallpaper]: http://leonardoalanb.deviantart.com/art/Minimalist-wallpaper-295519786
-[wallpaper-author]: http://leonardoalanb.deviantart.com/
